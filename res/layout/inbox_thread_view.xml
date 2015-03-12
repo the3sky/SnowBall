@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/inbox_thread_container_view"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/card_spacing"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/all_messages_divider"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginBottom="13.0dip"
+        android:layout_marginLeft="0.0dip"
+        android:layout_marginRight="0.0dip"
+        android:layout_marginTop="8.0dip"
+        android:background="@color/shade_message_header" />
+
+    <RelativeLayout
+        android:id="@+id/swipe_to_dismiss_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_message"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/message_body"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:paddingBottom="9.0dip" >
+
+            <ImageView
+                android:id="@+id/inbox_thread_profile_photo"
+                android:layout_width="40.0dip"
+                android:layout_height="40.0dip"
+                android:layout_gravity="right"
+                android:background="@drawable/profile_photo_default_background"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/btn_star" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/inbox_thread_profile_photo"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/inbox_thread_from"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="60.0dip"
+                    android:layout_weight="1.0"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-medium"
+                    android:maxLines="1"
+                    android:text="Jeson Patel blah blah blah blah blah blah blah"
+                    android:textColor="@color/inbox_thread_from"
+                    android:textSize="16.0dip" />
+
+                <TextView
+                    android:id="@+id/inbox_thread_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30.0dip"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif"
+                    android:maxLines="3"
+                    android:text="Test of message from Jeson Jeson. This is a multiline image."
+                    android:textColor="@color/inbox_thread_message"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/date_and_app_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+
+                <blue.stack.snowball.app.ui.TimerTextRefreshTextView
+                    android:id="@+id/inbox_thread_timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="5.0dip"
+                    android:layout_marginRight="5.0dip"
+                    android:layout_weight="0.0"
+                    android:ellipsize="end"
+                    android:fontFamily="sans-serif-light"
+                    android:maxLines="1"
+                    android:text="Yesterday"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/inbox_thread_timestamp"
+                    android:textSize="11.0dip" />
+
+                <ImageView
+                    android:id="@+id/inbox_thread_icon"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="5.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/btn_star" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/inbox_thread_expander"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_body"
+            android:layout_marginLeft="55.0dip"
+            android:layout_marginRight="32.0dip"
+            android:background="@drawable/more_messages_background"
+            android:orientation="vertical"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/inbox_thread_more_messages_divider" />
+
+            <TextView
+                android:id="@+id/inbox_thread_expander_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginTop="8.0dip"
+                android:text="@string/unread_notification_more_one"
+                android:textColor="@color/inbox_thread_more_messages"
+                android:textSize="12.0dip" />
+
+            <View
+                android:id="@+id/inbox_thread_expander_divider_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dip"
+                android:layout_marginBottom="1.0dip"
+                android:background="@color/inbox_thread_more_messages_divider" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

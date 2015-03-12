@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.shade.ui.CircleBackgroundMask android:padding="2.0dip" android:layout_width="@dimen/shade_status_bar_notification_size" android:layout_height="@dimen/shade_status_bar_notification_size" android:layout_alignParentRight="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/side_launcher_back" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@+id/yetti_animation" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:layout_alignParentRight="true" layout="@layout/yetti_animation_view" />
+</blue.stack.snowball.app.shade.ui.CircleBackgroundMask>

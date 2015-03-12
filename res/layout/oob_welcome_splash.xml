@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.oob.WelcomeScreenView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/oob_bubbles_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/yetti_animation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="190.0dip" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100.0dip"
+            android:paddingTop="195.0dip"
+            android:src="@drawable/oob_bubble_blank1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="320.0dip"
+            android:paddingTop="265.0dip"
+            android:src="@drawable/oob_bubble_blank2" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10.0dip"
+            android:paddingTop="225.0dip"
+            android:src="@drawable/oob_bubble_hangouts" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100.0dip"
+            android:paddingTop="85.0dip"
+            android:src="@drawable/oob_bubble_line" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="320.0dip"
+            android:paddingTop="115.0dip"
+            android:src="@drawable/oob_bubble_sms" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30.0dip"
+            android:paddingTop="145.0dip"
+            android:src="@drawable/oob_bubble_snapchat" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30.0dip"
+            android:paddingTop="75.0dip"
+            android:src="@drawable/oob_bubble_wechat" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="290.0dip"
+            android:paddingTop="175.0dip"
+            android:src="@drawable/oob_bubble_whatsapp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="260.0dip"
+            android:paddingTop="200.0dip"
+            android:src="@drawable/oob_bubbles_blank3" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="220.0dip"
+            android:paddingTop="80.0dip"
+            android:src="@drawable/oob_bubbles_fb" />
+    </RelativeLayout>
+
+    <blue.stack.snowball.app.ui.anim.AnimationPNGSequence
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/yetti_animation"
+        android:layout_width="300.0dip"
+        android:layout_height="300.0dip"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30.0dip"
+        android:src="@drawable/anim_splash_wave"
+        app:delay="1000"
+        app:loopCount="5"
+        app:loopEnd="18"
+        app:loopStart="13"
+        app:one_shot="true"
+        app:sequence="SPLASH_WAVE" />
+
+</blue.stack.snowball.app.oob.WelcomeScreenView>

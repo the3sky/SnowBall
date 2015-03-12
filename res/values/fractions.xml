@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="collapse_min_display_fraction">10.000002%</fraction>
+    <fraction name="expand_min_display_fraction">50.0%</fraction>
+</resources>

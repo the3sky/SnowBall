@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="@dimen/spinner_dimensions" android:layout_height="@dimen/spinner_dimensions" android:alpha="0.6"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <blue.stack.snowball.app.ui.anim.AnimationPNGSequence android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/spinner_placeholder" android:layout_centerInParent="true" app:sequence="SPINNER" app:one_shot="false" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <blue.stack.snowball.app.ui.anim.AnimationPNGSequence android:paddingTop="6.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/side_launcher_face" android:scaleType="fitCenter" app:sequence="IDLE_OOH" app:one_shot="false" app:delay="1500" app:loopStart="8" app:loopEnd="8" app:loopCount="6" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</RelativeLayout>

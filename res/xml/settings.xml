@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/header_general">
+        <SwitchPreference android:title="@string/title_enable_left_handed_mode" android:key="enable_left_handed_mode" android:summary="@string/summary_enable_left_handed_mode" android:defaultValue="false" />
+        <SwitchPreference android:title="@string/title_enable_headsup_notification" android:key="enable_headsup_notification" android:summary="@string/summary_enable_headsup_notification" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/title_enable_lock_screen" android:key="enable_lock_screen" android:summary="@string/summary_enable_lock_screen" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/header_apps">
+        <PreferenceScreen android:title="@string/title_enabled_apps" android:summary="@string/summary_enabled_apps" android:fragment="blue.stack.snowball.app.settings.SettingsActivity$EnabledAppsFragment" />
+        <Preference android:title="@string/title_quick_launch_apps" android:summary="@string/summary_quick_launch_apps" android:fragment="blue.stack.snowball.app.settings.QuickLaunchPreferenceFragment" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/header_permissions">
+        <Preference android:title="@string/title_notification_permission" android:key="notification_access_permission" android:summary="@string/summary_notification_permission" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/header_privacy">
+        <Preference android:title="@string/title_private_policy" android:key="privacy_policy" android:summary="@string/summary_private_policy" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/header_version">
+        <Preference android:title="@string/title_build" android:key="build" android:summary="Version v0.9\nBuild Number " />
+    </PreferenceCategory>
+</PreferenceScreen>

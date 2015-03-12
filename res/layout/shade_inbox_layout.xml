@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.swipe.InboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="@dimen/shade_side_margin"
+    android:layout_marginRight="@dimen/shade_side_margin"
+    android:paddingBottom="@dimen/shade_footer_height"
+    android:paddingTop="@dimen/shade_status_bar_height" >
+
+    <View
+        android:id="@+id/invisible_clear_button"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip"
+        android:layout_marginTop="82.0dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/swipe_side_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/app_review_container"
+            android:layout_marginLeft="2.0dip"
+            android:layout_marginRight="2.0dip" />
+
+        <android.support.v7.widget.CardView
+            xmlns:cardview="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/app_review_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/header_card"
+            android:layout_marginBottom="-11.0dip"
+            android:layout_marginLeft="-1.0999756dip"
+            android:layout_marginRight="-1.3999939dip"
+            cardview:cardBackgroundColor="@color/review_background"
+            cardview:cardCornerRadius="2.0dip"
+            cardview:cardElevation="2.0dip"
+            cardview:cardUseCompatPadding="true" >
+
+            <blue.stack.snowball.app.inbox.ui.AppReviewView
+                android:id="@+id/app_review_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/quick_launch_card"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/quicklaunch_height"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/header_card"
+        android:layout_marginLeft="1.0dip"
+        android:layout_marginRight="1.0dip"
+        android:layout_marginTop="18.0dip"
+        cardview:cardBackgroundColor="@color/shade_quicklaunch"
+        cardview:cardCornerRadius="2.0dip"
+        cardview:cardElevation="4.0dip"
+        cardview:cardUseCompatPadding="true" >
+
+        <blue.stack.snowball.app.shade.ui.QuickLaunchView
+            android:id="@+id/quick_launch"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center" />
+    </android.support.v7.widget.CardView>
+
+</blue.stack.snowball.app.swipe.InboxLayout>

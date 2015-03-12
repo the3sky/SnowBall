@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.ui.anim.YettiAnimationView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <blue.stack.snowball.app.ui.anim.AnimationPNGSequence
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/yetti_animation"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/yetti_idle"
+        app:sequence="YETTI_IDLE" />
+
+</blue.stack.snowball.app.ui.anim.YettiAnimationView>

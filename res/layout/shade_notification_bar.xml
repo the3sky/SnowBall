@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.shade.ui.ShadeNotificationBarView android:orientation="horizontal" android:paddingLeft="@dimen/shade_status_bar_notification_side_margin" android:paddingRight="@dimen/shade_status_bar_notification_side_margin" android:layout_width="fill_parent" android:layout_height="@dimen/shade_status_bar_notification_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/translating_layer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:id="@+id/tool_tip_text" android:background="@drawable/tool_tip_bg" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/migrate_popup_explanation" />
+        <RelativeLayout android:id="@+id/tool_tip_arrow" android:background="@drawable/tool_tip_arrow_bg" android:layout_width="20.0dip" android:layout_height="20.0dip" android:rotation="90.0" />
+        <include android:id="@+id/yetti_tab_layout" android:layout_width="@dimen/shade_status_bar_notification_size" android:layout_height="@dimen/shade_status_bar_notification_size" layout="@layout/yetti_tab_layout" />
+    </LinearLayout>
+</blue.stack.snowball.app.shade.ui.ShadeNotificationBarView>

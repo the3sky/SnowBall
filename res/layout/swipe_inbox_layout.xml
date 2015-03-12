@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.swipe.InboxLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@+id/invisible_clear_button" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@+id/swipe_side_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_weight="0.75" />
+        <blue.stack.snowball.app.swipe.ui.QuickLaunchView android:gravity="center" android:id="@+id/quick_launch" android:layout_width="fill_parent" android:layout_height="@dimen/quicklaunch_height" android:layout_marginLeft="10.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="0.0dip" android:layout_alignParentBottom="true" />
+    </LinearLayout>
+</blue.stack.snowball.app.swipe.InboxLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.overlay.ui.OverlayNotificationBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/overlay_status_bar_notification_side_margin"
+    android:paddingRight="@dimen/overlay_status_bar_notification_side_margin"
+    android:translationY="-10.0dip" >
+
+    <android.support.v7.widget.CardView
+        xmlns:cardview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/translating_layer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_message"
+        cardview:cardCornerRadius="2.0dip"
+        cardview:cardElevation="5.0dip"
+        cardview:cardUseCompatPadding="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/overlay_button_background"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="10.0dip" >
+
+                <ImageView
+                    android:id="@+id/inbox_thread_profile_photo"
+                    android:layout_width="40.0dip"
+                    android:layout_height="40.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:background="@drawable/profile_photo_default_background"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/profile_default" />
+
+                <ImageView
+                    android:id="@+id/inbox_thread_icon"
+                    android:layout_width="20.0dip"
+                    android:layout_height="20.0dip"
+                    android:layout_alignBottom="@id/inbox_thread_profile_photo"
+                    android:layout_alignRight="@id/inbox_thread_profile_photo"
+                    android:layout_marginBottom="-5.0dip"
+                    android:layout_marginRight="-5.0dip"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/btn_star" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/message_body"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10.0dip"
+                    android:layout_marginRight="10.0dip" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/inbox_thread_from"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="60.0dip"
+                            android:layout_weight="1.0"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif-medium"
+                            android:maxLines="1"
+                            android:text="Jeson Patel blah blah blah blah blah blah blah"
+                            android:textColor="@color/overlay_thread_from"
+                            android:textSize="16.0dip" />
+
+                        <TextView
+                            android:id="@+id/inbox_thread_message"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="30.0dip"
+                            android:ellipsize="end"
+                            android:fontFamily="sans-serif"
+                            android:maxLines="3"
+                            android:text="Test of message from Jeson Jeson. This is a multiline image."
+                            android:textColor="@color/overlay_thread_message"
+                            android:textSize="14.0dip" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/inbox_action_bar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dip"
+                        android:background="@color/overlay_message_header" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/inbox_action_button_one"
+                          
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:drawablePadding="8.0dip"
+                            android:drawableStart="@android:drawable/btn_star"
+                           android:drawableLeft="@android:drawable/btn_star"
+                            android:ellipsize="end"
+                            android:gravity="start|center"
+                            android:singleLine="true"
+                            android:text="Archive"
+                            android:textAllCaps="true"
+                            android:textColor="@color/overlay_button_text"
+                            android:textSize="14.0dip" />
+
+                        <Button
+                            android:id="@+id/inbox_action_button_two"
+                       
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:drawablePadding="8.0dip"
+                            android:drawableStart="@android:drawable/btn_star"
+                             android:drawableLeft="@android:drawable/btn_star"
+                            android:ellipsize="end"
+                            android:gravity="start|center"
+                            android:singleLine="true"
+                            android:text="Archive"
+                            android:textAllCaps="true"
+                            android:textColor="@color/overlay_button_text"
+                            android:textSize="12.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</blue.stack.snowball.app.overlay.ui.OverlayNotificationBarView>

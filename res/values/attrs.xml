@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="fillColor" format="color" />
+    <attr name="pageColor" format="color" />
+    <attr name="radius" format="dimension" />
+    <attr name="snap" format="boolean" />
+    <attr name="strokeColor" format="color" />
+
+    <declare-styleable name="AnimationPNGSequence">
+        <attr name="sequence" format="string" />
+        <attr name="one_shot" format="boolean" />
+        <attr name="delay" format="integer" />
+        <attr name="loopStart" format="integer" />
+        <attr name="loopEnd" format="integer" />
+        <attr name="loopCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="LinePageIndicator">
+        <attr name="vpiCirclePageIndicatorStyle" format="reference" />
+        <attr name="vpiIconPageIndicatorStyle" format="reference" />
+        <attr name="vpiLinePageIndicatorStyle" format="reference" />
+        <attr name="vpiTitlePageIndicatorStyle" format="reference" />
+        <attr name="vpiTabPageIndicatorStyle" format="reference" />
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference" />
+    </declare-styleable>
+
+</resources>

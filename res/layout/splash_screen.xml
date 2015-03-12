@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.oob.SplashScreenView android:background="@color/snowball_blue" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <blue.stack.snowball.app.ui.anim.AnimationPNGSequence android:id="@+id/view" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginLeft="45.0dip" android:src="@drawable/anim_splash_wave" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:sequence="SPLASH_WAVE" app:one_shot="true" app:delay="1000" app:loopStart="13" app:loopEnd="18" app:loopCount="3" xmlns:app="http://schemas.android.com/apk/res-auto" />
+    <ImageView android:id="@+id/snowball_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/snowball_text" android:layout_toRightOf="@id/view" android:layout_centerVertical="true" />
+</blue.stack.snowball.app.oob.SplashScreenView>

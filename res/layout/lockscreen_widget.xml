@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.ui.InterceptTouchLinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/lockscreen_body" android:background="@color/lockscreen_dim" android:paddingTop="20.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <blue.stack.snowball.app.lockscreen.ui.LockscreenWidgetPagesLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/lockscreen_widget_pages" android:layout_width="wrap_content" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <android.support.v4.view.ViewPager android:id="@+id/lockscreen_widget_pager" android:layout_width="wrap_content" android:layout_height="120.0dip" />
+    </LinearLayout>
+    <View android:background="@drawable/lockscreen_dim_gradient" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+</blue.stack.snowball.app.ui.InterceptTouchLinearLayout>

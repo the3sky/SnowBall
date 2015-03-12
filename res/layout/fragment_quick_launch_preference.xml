@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/quick_launch_settings_description" android:fontFamily="sans-serif" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <FrameLayout android:background="@drawable/quicklaunch_settings_selection_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="center" android:id="@+id/quick_launch_button1" android:background="@android:color/transparent" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_margin="5.0dip" android:scaleType="fitXY" />
+            </FrameLayout>
+            <TextView android:textSize="18.0dip" android:textStyle="normal" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <FrameLayout android:background="@drawable/quicklaunch_settings_selection_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="center" android:id="@+id/quick_launch_button2" android:background="@android:color/transparent" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_margin="5.0dip" android:scaleType="fitXY" />
+            </FrameLayout>
+            <TextView android:textSize="18.0dip" android:textStyle="normal" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <FrameLayout android:background="@drawable/quicklaunch_settings_selection_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="center" android:id="@+id/quick_launch_button3" android:background="@android:color/transparent" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_margin="5.0dip" android:scaleType="fitXY" />
+            </FrameLayout>
+            <TextView android:textSize="18.0dip" android:textStyle="normal" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <FrameLayout android:background="@drawable/quicklaunch_settings_selection_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="center" android:id="@+id/quick_launch_button4" android:background="@android:color/transparent" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_margin="5.0dip" android:scaleType="fitXY" />
+            </FrameLayout>
+            <TextView android:textSize="18.0dip" android:textStyle="normal" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <FrameLayout android:background="@drawable/quicklaunch_settings_selection_background" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:layout_gravity="center" android:id="@+id/quick_launch_button5" android:background="@android:color/transparent" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_margin="5.0dip" android:scaleType="fitXY" />
+            </FrameLayout>
+            <TextView android:textSize="18.0dip" android:textStyle="normal" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5" android:fontFamily="sans-serif" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

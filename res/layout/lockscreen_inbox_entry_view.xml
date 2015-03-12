@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/container" android:background="@drawable/card_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/message_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <RelativeLayout android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip">
+                <ImageView android:id="@+id/inbox_thread_profile_photo" android:background="@drawable/profile_photo_default_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@android:drawable/btn_star" android:scaleType="fitCenter" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0dip" android:textColor="@color/inbox_thread_from" android:ellipsize="end" android:id="@+id/inbox_thread_from" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip" android:layout_marginRight="5.0dip" android:text="Jeson Patel blah blah blah blah blah blah blah" android:maxLines="1" android:layout_weight="1.0" android:fontFamily="sans-serif-medium" />
+                    <blue.stack.snowball.app.ui.TimerTextRefreshTextView android:textSize="11.0dip" android:textColor="@color/inbox_thread_timestamp" android:ellipsize="end" android:layout_gravity="fill_vertical|right|center" android:id="@+id/inbox_thread_timestamp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yesterday" android:maxLines="1" android:fontFamily="sans-serif-light" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0dip" android:textColor="@color/inbox_thread_message" android:ellipsize="end" android:id="@+id/inbox_thread_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="Test of message from Jeson Jeson. This is a multiline image. " android:maxLines="3" android:layout_weight="1.0" android:fontFamily="sans-serif" />
+                    <ImageView android:layout_gravity="fill_vertical|right|center" android:id="@+id/inbox_thread_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@android:drawable/btn_star" android:scaleType="fitCenter" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

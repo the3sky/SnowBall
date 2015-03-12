@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="blue.stack.snowball.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="blue.stack.snowball.app.MainService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name="blue.stack.snowball.app.MainServiceBootReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="blue.stack.snowball.app.nsprocess.NotificationService"
+            android:enabled="true"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:process="blue.stack.snowball.app.ns" >
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="blue.stack.snowball.app.settings.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait" />
+        <activity android:name="net.hockeyapp.android.UpdateActivity" />
+        <activity android:name="net.hockeyapp.android.FeedbackActivity" />
+        <activity
+            android:name="blue.stack.snowball.app.LaunchActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.LaunchActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="blue.stack.snowball.app.lockscreen.KeyguardDismissActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.KeyguardDismiss" />
+        <activity
+            android:name="blue.stack.snowball.app.apps.BackButtonActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.BackButton" />
+        <activity
+            android:name="blue.stack.snowball.app.oob.OOBSplashScreenActivity"
+            android:label="@string/title_activity_oob"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.OOB" />
+        <activity
+            android:name="blue.stack.snowball.app.oob.OOBTutorialActivity"
+            android:label="@string/title_activity_oob"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.OOB" />
+        <activity
+            android:name="blue.stack.snowball.app.oob.OOBStartupSpinner"
+            android:label="@string/title_activity_oob"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.OOB" />
+        <activity
+            android:name="blue.stack.snowball.app.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="blue.stack.snowball.app.MigrateActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="blue.stack.snowball.app.OpenShadeActivity"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

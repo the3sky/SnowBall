@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/lockscreen_dim" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="@drawable/lockscreen_unlock_to_continue_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_margin="10.0dip" android:src="@drawable/ic_notification_large" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/lockscreen_unlock_to_continue_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lockscreen_unlock_to_continue" android:layout_weight="1.0" android:fontFamily="sans-serif-light" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/lockscreen_unlock_arrow" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <View android:id="@+id/lockscreen_widget_clear" android:background="@drawable/lockscreen_dim_gradient" android:layout_width="fill_parent" android:layout_height="60.0dip" />
+</LinearLayout>

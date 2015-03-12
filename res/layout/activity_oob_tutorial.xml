@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:background="@color/oob_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="112.0dip">
+            <TextView android:textSize="20.0dip" android:textColor="@color/oob_text" android:gravity="center" android:layout_gravity="center" android:id="@+id/oob_explanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oob_tutorial_explanation" android:fontFamily="sans-serif-light" android:textAlignment="center" />
+        </FrameLayout>
+        <blue.stack.snowball.app.ui.AspectRatioedRelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <include layout="@layout/oob_phone" />
+            </RelativeLayout>
+        </blue.stack.snowball.app.ui.AspectRatioedRelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/oob_next" android:background="@color/oob_next_background" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/oob_next" android:layout_alignParentBottom="true">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="@color/oob_next_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oob_enable_notification_access" />
+    </LinearLayout>
+</RelativeLayout>

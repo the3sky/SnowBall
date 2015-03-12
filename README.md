@@ -1,2 +1,1 @@
-# SnowBall
-Android Notification Manger
+#SnowBall

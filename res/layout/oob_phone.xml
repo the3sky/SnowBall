@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@+id/oob_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/oob_phone" />
+    <RelativeLayout android:id="@+id/oob_shade_pull_target_container" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_alignRight="@id/oob_phone">
+        <ImageView android:id="@+id/oob_shade_pull_target" android:paddingRight="15.0dip" android:layout_width="55.0dip" android:layout_height="40.0dip" android:src="@drawable/oob_tap_target" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dip" android:layout_marginRight="16.0dip" android:layout_alignRight="@id/oob_phone">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/oob_headsup" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/oob_headsup" />
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:id="@+id/oob_phone_dim" android:background="@android:color/black" android:layout_width="225.0dip" android:layout_height="400.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="12.0dip" android:layout_alignRight="@id/oob_phone" android:alpha="0.9" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="42.0dip" android:layout_marginRight="18.0dip" android:layout_alignRight="@id/oob_phone">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/oob_shade" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/oob_drawer" android:scaleType="matrix" />
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:id="@+id/shade_pull_touch_target" android:background="@android:color/transparent" android:layout_width="120.0dip" android:layout_height="100.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:layout_alignRight="@id/oob_phone" />
+    <ImageView android:id="@+id/oob_notification_access" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="42.0dip" android:src="@drawable/oob_notification_access" />
+    <ImageView android:id="@+id/oob_notification_access_tap_indicator" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="180.0dip" android:layout_marginTop="83.0dip" android:src="@drawable/oob_tap_indicator" />
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="empty_array" />
+    <string-array name="statusbar_visibility_choice_values">
+        <item>visible</item>
+        <item>pulse</item>
+        <item>hidden</item>
+    </string-array>
+    <string-array name="tab_visibility_choices">
+        <item>Always</item>
+        <item>When I get a new message</item>
+        <item>Never</item>
+    </string-array>
+    
+        <style name="CustomNotificationTitle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+       
+    </style>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<blue.stack.snowball.app.swipe.ui.YettiTabLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/tab_maximized_width"
+    android:layout_height="@dimen/tab_height"
+    android:background="@android:color/transparent"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/tab_animation_layer"
+        android:layout_width="@dimen/tab_width"
+        android:layout_height="@dimen/tab_height" >
+
+        <ImageView
+            android:id="@+id/tab_halo"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/side_launcher_back" />
+
+        <blue.stack.snowball.app.ui.anim.AnimationPNGSequence
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/yetti_animation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="6.0dip"
+            android:paddingTop="2.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/side_launcher_face"
+            app:sequence="IDLE" />
+
+        <TextView
+            android:id="@+id/text_badge_count"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingBottom="5.0dip"
+            android:singleLine="true"
+            android:text="19"
+            android:textColor="@color/snowball_blue"
+            android:textSize="24.0dip" />
+    </RelativeLayout>
+
+</blue.stack.snowball.app.swipe.ui.YettiTabLayout>

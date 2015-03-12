@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/oob_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/open_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0" >
+
+        <RelativeLayout
+            android:id="@+id/where_to_pull_explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/migrate_explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15.0dip"
+                android:layout_marginLeft="60.0dip"
+                android:layout_marginRight="60.0dip"
+                android:layout_marginTop="65.0dip"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/pull_from_here"
+                android:textAlignment="center"
+                android:textColor="@color/oob_text"
+                android:textSize="18.0dip" />
+
+            <LinearLayout
+                android:id="@+id/where_to_pull_image_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="@dimen/shade_status_touch_bar_width"
+                    android:layout_height="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@color/snowball_blue" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10.0dip"
+                    android:src="@drawable/arrow_where_to_pull_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/where_to_pull_image_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="@dimen/shade_status_touch_bar_width"
+                    android:layout_height="10.0dip"
+                    android:layout_marginBottom="5.0dip"
+                    android:background="@color/snowball_blue" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/arrow_where_to_pull_left" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/where_to_pull_explanation"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30.0dip"
+            android:layout_marginTop="20.0dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/oob_welcome_image" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_below="@id/open_instructions"
+        android:layout_marginLeft="20.0dip"
+        android:layout_marginRight="20.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5.0dip"
+            android:text="Quick settings"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="@color/snowball_blue" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_marginTop="5.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/title_enable_left_handed_mode"
+                android:textSize="16.0dip" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/left_handed_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/title_enable_headsup_notification"
+                android:textSize="16.0dip" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/headsup_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/advanced_settings"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="@string/advanced_settings"
+                android:textSize="16.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10.0dip"
+                android:paddingRight="10.0dip"
+                android:src="@drawable/icon_gear" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
